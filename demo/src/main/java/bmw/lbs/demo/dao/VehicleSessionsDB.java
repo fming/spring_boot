@@ -30,7 +30,7 @@ public class VehicleSessionsDB implements VehicleSessionsDao {
 	
 	public VehicleSessionsDB() {
 		// It's better to use Database for this, but for demo, only read all of them into memory.		
-		sessions = loadObjectList(VehicleSession.class, "/data.csv");
+		sessions = loadObjectList(VehicleSession.class, "/data_test.csv");
 	}
 	
 	public List<VehicleSession> loadObjectList(Class<VehicleSession> type, String file) {
