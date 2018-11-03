@@ -22,7 +22,7 @@ public class TokenService {
 	 * @param token
 	 * @return
 	 */
-	@Cacheable
+	@Cacheable(cacheNames="user", key="#token")
 	public UserDetails getUserFromToken(String token) {
 		if(token == null) {
 			return null;
@@ -31,6 +31,8 @@ public class TokenService {
 		return tokensMap.get(token);
 		
 	}
+	
+	
 	
 	/**
 	 * Login, return the token if successfully or return null.

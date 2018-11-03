@@ -7,3 +7,8 @@ logging:
     ROOT: WARN
     bmw.lbs.demo.controller: TRACE
     
+spring:
+  cache:
+    redis:
+      time-to-live: 600s # set a overdue time for cache
+    
