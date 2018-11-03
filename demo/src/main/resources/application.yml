@@ -1,0 +1,9 @@
+server:
+  port: 8080
+  
+logging:
+  file: target/app.log
+  level:
+    ROOT: WARN
+    bmw.lbs.demo.controller: TRACE
+    
